@@ -13,9 +13,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
-      </head>
       <body className={`${inter.className} antialiased selection:bg-blue-500/30 selection:text-white relative bg-zinc-950`}>
         {/* Facebook Pixel */}
         <Script id="facebook-pixel" strategy="afterInteractive">
