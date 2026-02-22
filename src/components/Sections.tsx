@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { N8nIcon, ClaudeIcon, HighLevelIcon, RetellIcon, SupabaseIcon } from "./icons";
+import { Icon } from '@iconify/react';
 
 const BOOKING_URL = "https://links.convertwave.ai/widget/booking/vTmxKNDLOVK17mpAYXot";
 
@@ -28,11 +29,11 @@ export function HeroSection() {
                     <a href={BOOKING_URL} target="_blank" rel="noreferrer" className="shiny-cta group">
                         <span className="flex items-center gap-2">
                             Book a Free Strategy Call
-                            <iconify-icon icon="solar:arrow-right-linear" width="1.2em" height="1.2em" />
+                            <Icon icon="solar:arrow-right-linear" width="1.2em" height="1.2em" />
                         </span>
                     </a>
                     <a href="/insights" className="px-8 py-4 rounded-full border border-zinc-700 text-zinc-200 font-medium hover:bg-zinc-800 transition-colors flex items-center gap-3 text-lg">
-                        <iconify-icon icon="solar:book-bookmark-linear" width="1.2em" height="1.2em" />
+                        <Icon icon="solar:book-bookmark-linear" width="1.2em" height="1.2em" />
                         Read Our Insights
                     </a>
                 </div>
@@ -125,7 +126,7 @@ function ServiceCard({ icon, iconSvg, color, title, desc, features }: { icon?: s
                 {iconSvg ? (
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></svg>
                 ) : (
-                    <iconify-icon icon={icon} width="1.5em" height="1.5em" />
+                    <Icon icon={icon || ""} width="1.5em" height="1.5em" />
                 )}
             </div>
             <h3 className="text-2xl font-medium mb-4 relative z-10 text-white">{title}</h3>
@@ -133,7 +134,7 @@ function ServiceCard({ icon, iconSvg, color, title, desc, features }: { icon?: s
             <ul className="text-sm text-zinc-500 space-y-3 relative z-10">
                 {features.map((f) => (
                     <li key={f} className="flex gap-3 items-center">
-                        <iconify-icon icon="solar:check-circle-linear" className={c.check} width="1.2em" height="1.2em" />
+                        <Icon icon="solar:check-circle-linear" className={c.check} width="1.2em" height="1.2em" />
                         {f}
                     </li>
                 ))}
@@ -236,7 +237,7 @@ export function RoadmapSection() {
                                 {benefits.map((b) => (
                                     <li key={b} className="flex gap-4 items-start text-zinc-300 text-lg">
                                         <div className="mt-1">
-                                            <iconify-icon icon="solar:check-circle-linear" className="text-blue-500" width="1.2em" height="1.2em" />
+                                            <Icon icon="solar:check-circle-linear" className="text-blue-500" width="1.2em" height="1.2em" />
                                         </div>
                                         <span>{b}</span>
                                     </li>
@@ -258,7 +259,7 @@ export function RoadmapSection() {
 
                                     <div className="w-full border border-zinc-800 bg-zinc-950/50 rounded-2xl p-6 shadow-sm flex flex-col items-center justify-center gap-2 mb-6">
                                         <div className="flex gap-2 items-center text-blue-400 font-medium tracking-wide">
-                                            <iconify-icon icon="solar:letter-linear" width="1.4em" height="1.4em" />
+                                            <Icon icon="solar:letter-linear" width="1.4em" height="1.4em" />
                                             We sent it to:
                                         </div>
                                         <div className="text-xl font-medium text-white">{emailSentTo}</div>
@@ -266,7 +267,7 @@ export function RoadmapSection() {
 
                                     <div className="w-full bg-blue-900/10 border border-blue-500/20 rounded-2xl p-8 text-left mb-10">
                                         <div className="flex items-center gap-2 text-zinc-300 font-medium mb-5 text-lg">
-                                            <iconify-icon icon="solar:clock-circle-linear" width="1.4em" height="1.4em" className="text-blue-400" />
+                                            <Icon icon="solar:clock-circle-linear" width="1.4em" height="1.4em" className="text-blue-400" />
                                             What happens next?
                                         </div>
                                         <ul className="space-y-4 text-zinc-400">
@@ -280,7 +281,7 @@ export function RoadmapSection() {
                                         <p className="text-zinc-400 font-medium">Ready to implement faster? Let's chat!</p>
                                         <a href="https://links.convertwave.ai/widget/booking/vTmxKNDLOVK17mpAYXot" target="_blank" rel="noreferrer" className="w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white font-medium text-lg py-4 px-10 rounded-xl transition-all shadow-xl hover:shadow-blue-500/25 flex items-center justify-center gap-3">
                                             Book a Discovery Call
-                                            <iconify-icon icon="solar:arrow-right-up-linear" width="1.2em" height="1.2em" />
+                                            <Icon icon="solar:arrow-right-up-linear" width="1.2em" height="1.2em" />
                                         </a>
                                     </div>
                                 </div>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import Image from "next/image";
+import { Icon } from '@iconify/react';
 
 const BOOKING_URL = "https://links.convertwave.ai/widget/booking/vTmxKNDLOVK17mpAYXot";
 
@@ -28,7 +29,7 @@ export default function Header() {
                 </a>
 
                 <button className="md:hidden text-zinc-400" onClick={() => setMenuOpen(!menuOpen)}>
-                    <iconify-icon icon="solar:hamburger-menu-linear" width="1.5em" height="1.5em" />
+                    <Icon icon="solar:hamburger-menu-linear" width="1.5em" height="1.5em" />
                 </button>
             </div>
 

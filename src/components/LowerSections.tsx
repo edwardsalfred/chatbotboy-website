@@ -1,6 +1,7 @@
 const BOOKING_URL = "https://links.convertwave.ai/widget/booking/vTmxKNDLOVK17mpAYXot";
 
 import Image from "next/image";
+import { Icon } from '@iconify/react';
 
 export function InsightsSection() {
     const posts = [
@@ -37,7 +38,7 @@ export function InsightsSection() {
                             <h3 className="text-xl font-medium text-white mb-3 group-hover:text-blue-400 transition-colors">{p.title}</h3>
                             <p className="text-zinc-400 text-base leading-relaxed mb-6 line-clamp-2">{p.desc}</p>
                             <div className="mt-auto flex items-center text-sm font-medium text-white group-hover:gap-2 transition-all">
-                                Read Article <iconify-icon icon="solar:arrow-right-linear" width="1.2em" height="1.2em" />
+                                Read Article <Icon icon="solar:arrow-right-linear" width="1.2em" height="1.2em" />
                             </div>
                         </div>
                     </a>
@@ -65,10 +66,10 @@ export function AboutSection() {
                         <p className="leading-relaxed text-lg text-zinc-300">His background spans Oracle enterprise consulting, outbound lead generation, and hands-on automation development using tools like n8n, Vapi, Retell, and Go High Level. He doesn&apos;t just know how the tools work. He knows how businesses work, and how to wire the two together in a way that delivers real results from day one.</p>
                         <div className="pt-6 flex gap-6">
                             <a href="https://www.linkedin.com/in/alfrededwards/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors text-2xl">
-                                <iconify-icon icon="lucide:linkedin" width="24" height="24" />
+                                <Icon icon="lucide:linkedin" width="24" height="24" />
                             </a>
                             <a href="https://www.youtube.com/@alfredaoneedwards" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors text-2xl">
-                                <iconify-icon icon="lucide:youtube" width="24" height="24" />
+                                <Icon icon="lucide:youtube" width="24" height="24" />
                             </a>
                         </div>
                     </div>
