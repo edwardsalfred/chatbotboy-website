@@ -48,6 +48,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
 
+        {/* LeadConnector Chat Widget */}
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          strategy="afterInteractive"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="676aeac83f9fade10c2e340c"
+        />
+
         {children}
       </body>
     </html>
