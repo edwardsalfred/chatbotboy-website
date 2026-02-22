@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import Image from "next/image";
+import Link from 'next/link';
 import { Icon } from '@iconify/react';
 
 const BOOKING_URL = "https://links.convertwave.ai/widget/booking/vTmxKNDLOVK17mpAYXot";
@@ -14,7 +15,9 @@ export default function Header() {
         <header className="fixed top-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-md">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    <Image src="/chatbotBOY - LOGO A.png" alt="ChatbotBoy Logo" width={220} height={48} className="object-contain" />
+                    <Link href="/">
+                        <Image src="/chatbotBOY - LOGO A.png" alt="ChatbotBoy Logo" width={220} height={48} className="object-contain" />
+                    </Link>
                 </div>
 
                 <nav className="hidden md:flex items-center gap-8 text-base font-medium text-zinc-400">
