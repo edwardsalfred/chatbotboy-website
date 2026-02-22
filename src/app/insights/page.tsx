@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { Footer } from "@/components/LowerSections";
 import Image from "next/image";
+import { Icon } from '@iconify/react';
 
 export default function InsightsPage() {
     const posts = [
@@ -51,7 +52,7 @@ export default function InsightsPage() {
                                     <h3 className="text-xl font-medium text-white mb-3 group-hover:text-blue-400 transition-colors">{p.title}</h3>
                                     <p className="text-zinc-400 text-base leading-relaxed mb-6 line-clamp-2">{p.desc}</p>
                                     <div className="mt-auto flex items-center text-sm font-medium text-white group-hover:gap-2 transition-all">
-                                        Read Article <iconify-icon icon="solar:arrow-right-linear" width="1.2em" height="1.2em" />
+                                        Read Article <Icon icon="solar:arrow-right-linear" width="1.2em" height="1.2em" />
                                     </div>
                                 </div>
                             </a>
