@@ -28,7 +28,6 @@ export default function Header() {
                 </a>
 
                 <button className="md:hidden text-zinc-400" onClick={() => setMenuOpen(!menuOpen)}>
-                    {/* @ts-expect-error iconify web component */}
                     <iconify-icon icon="solar:hamburger-menu-linear" width="1.5em" height="1.5em" />
                 </button>
             </div>
