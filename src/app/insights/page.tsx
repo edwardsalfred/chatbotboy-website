@@ -51,7 +51,7 @@ export default function InsightsPage() {
                                     <h3 className="text-xl font-medium text-white mb-3 group-hover:text-blue-400 transition-colors">{p.title}</h3>
                                     <p className="text-zinc-400 text-base leading-relaxed mb-6 line-clamp-2">{p.desc}</p>
                                     <div className="mt-auto flex items-center text-sm font-medium text-white group-hover:gap-2 transition-all">
-                                        Read Article {/* @ts-expect-error iconify */}<iconify-icon icon="solar:arrow-right-linear" width="1.2em" height="1.2em" />
+                                        Read Article <iconify-icon icon="solar:arrow-right-linear" width="1.2em" height="1.2em" />
                                     </div>
                                 </div>
                             </a>
