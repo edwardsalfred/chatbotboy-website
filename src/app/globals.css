@@ -176,3 +176,21 @@ body {
   border: 1px solid rgba(63, 63, 70, 0.4);
   backdrop-filter: blur(12px);
 }
+
+/* TermsFeed Cookie Banner Fixes */
+.cc-nb-main-container {
+  z-index: 999999 !important;
+  left: 20px !important;
+  right: auto !important;
+  max-width: 400px !important;
+  border-radius: 8px !important;
+}
+
+[id^="termsfeed-com---nb"] {
+  left: 20px !important;
+  right: auto !important;
+}
+
+#cookie-consent-init {
+  display: block;
+}

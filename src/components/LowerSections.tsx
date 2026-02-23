@@ -102,9 +102,10 @@ export function Footer() {
         <footer className="border-t border-zinc-800 py-16 bg-zinc-950">
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
                 <div className="text-base text-zinc-500">© 2026 Chatbot Boy AI. All rights reserved.</div>
-                <div className="flex gap-10 text-base font-medium text-zinc-400">
+                <div className="flex flex-wrap gap-10 text-base font-medium text-zinc-400 justify-center">
                     <a href="/privacy" className="hover:text-white transition-colors">Privacy</a>
                     <a href="/terms" className="hover:text-white transition-colors">Terms</a>
+                    <a href="#" id="open_preferences_center" className="hover:text-white transition-colors">Update cookies preferences</a>
                     <a href="mailto:alfred@chatbotboy.ai" className="hover:text-white transition-colors">Email Us</a>
                 </div>
             </div>
