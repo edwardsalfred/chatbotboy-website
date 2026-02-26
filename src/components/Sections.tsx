@@ -155,7 +155,7 @@ export function ProcessSection() {
         <section className="border-y bg-zinc-900/20 border-white/5 py-28" id="process">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col md:flex-row gap-20">
-                    <div className="md:w-1/3 sticky top-32 h-fit">
+                    <div className="md:w-1/3 md:sticky md:top-32 h-fit">
                         <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-white">How We Build Your System</h2>
                         <p className="text-xl text-zinc-400 mb-10">No jumping straight into tools. We take the time to understand your operation first, then build the right solution from the ground up.</p>
                         <a href={BOOKING_URL} target="_blank" rel="noreferrer" className="px-6 py-3 rounded-lg bg-zinc-100 text-zinc-950 font-semibold text-base hover:bg-zinc-200 transition-colors inline-block">Start the Process</a>
@@ -225,7 +225,7 @@ export function RoadmapSection() {
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
 
                     {/* Left Side: Copy & Benefits */}
-                    <div className="w-full lg:w-5/12 space-y-8 sticky top-32">
+                    <div className="w-full lg:w-5/12 space-y-8 lg:sticky lg:top-32">
                         <div>
                             <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-white mb-6">Get Your Free AI Implementation Roadmap</h2>
                             <p className="text-xl text-zinc-400 leading-relaxed">Discover how AI can automate your business processes. Get a custom analysis in 5 minutes—no sales call required.</p>
